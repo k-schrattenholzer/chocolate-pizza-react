@@ -10,13 +10,13 @@ export default class Header extends React.Component {
                         <div>
                         <img src="logo.png" alt="fork and knife logo" />
                         </div>
-                    <div class="logo-text">
-                        <h1>Delicious</h1>
-                        The best food blog ever.
-                    </div>
-                    {
-                        ButtonList
-                    }
+                        <div className = 'Icons'>
+                            <h1>Delicious</h1>
+                            <p>The best food blog ever.</p>
+                        </div>
+                        <div className = 'Icons'>
+                            { <ButtonList /> }
+                        </div>
                     </div>
                 </header>                
             </div>

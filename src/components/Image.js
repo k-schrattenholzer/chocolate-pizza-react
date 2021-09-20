@@ -5,7 +5,7 @@ export default class Image extends React.Component {
         return (
             <div>
                 <img
-                url = '' 
+                src = 'choco-pizza.png' 
                 alt = ''
                 />
             </div>
