@@ -6,7 +6,6 @@ export default class Header extends React.Component {
         return (
             <div>
                 <header> 
-                    <div>
                         <div>
                         <img src="logo.png" alt="fork and knife logo" />
                         </div>
@@ -17,7 +16,6 @@ export default class Header extends React.Component {
                         <div className = 'Icons'>
                             { <ButtonList /> }
                         </div>
-                    </div>
                 </header>                
             </div>
         )

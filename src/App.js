@@ -8,24 +8,35 @@ import Footer from './components/Footer.js';
 import Ingredients from './data.js'
 import './App.css';
 
-export default class App extends React.Component() {
+export default class App extends React.Component {
   render() {
-  return (
-    <div className="App">
-      <Header />
-      <Title />
-      <Image />
-      <Recipe />
-      {
-        Ingredients.map(ingredient => 
-          <IngredientsList
-          quantity = {ingredient.amount}
-          item = {ingredient.name}
-          />)
-      }
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+
+          <Header className = 'header'/>
+          <hr />
+          
+          <Title />
+
+          <Image />
+
+          <Recipe />
+
+          <div>
+            <ul>
+              {
+                Ingredients.map(ingredient => 
+                  <IngredientsList
+                  quantity = {ingredient.amount}
+                  item = {ingredient.name}
+                  />)
+              }
+            </ul>
+          </div>
+
+          <Footer />
+        </div>
+      );
 }
 }
 
