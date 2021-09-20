@@ -3,21 +3,29 @@ import Header from './components/Header.js';
 import Title from './components/Title.js';
 import Image from './components/Image.js';
 import Recipe from './components/Recipe.js';
-import Ingredients from './components/Ingredients.js';
+import IngredientsList from './components/IngredientsList.js';
 import Footer from './components/Footer.js';
+import Ingredients from './data.js'
 import './App.css';
 
-function App() {
+export default class App extends React.Component() {
+  render() {
   return (
     <div className="App">
       <Header />
       <Title />
       <Image />
       <Recipe />
-      <Ingredients />
+      {
+        Ingredients.map(ingredient => 
+          <IngredientsList
+          quantity = {ingredient.amount}
+          item = {ingredient.name}
+          />)
+      }
       <Footer />
     </div>
   );
 }
+}
 
-export default App;
