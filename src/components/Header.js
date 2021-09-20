@@ -1,10 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
+import ButtonList from './ButtonList'
 
-export default class Header extends Component {
+export default class Header extends React.Component {
     render() {
         return (
             <div>
-                <h1> Header Element</h1>
+                <header> 
+                    <div>
+                        <div>
+                        <img src="logo.png" alt="fork and knife logo" />
+                        </div>
+                    <div class="logo-text">
+                        <h1>Delicious</h1>
+                        The best food blog ever.
+                    </div>
+                    {
+                        ButtonList
+                    }
+                    </div>
+                </header>                
             </div>
         )
     }

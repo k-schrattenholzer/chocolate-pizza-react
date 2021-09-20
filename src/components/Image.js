@@ -1,10 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Image extends Component {
+export default class Image extends React.Component {
     render() {
         return (
             <div>
-                <img></img>
+                <img
+                url = '' 
+                alt = ''
+                />
             </div>
         )
     }
