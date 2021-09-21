@@ -13,17 +13,17 @@ export default class App extends React.Component {
     return (
         <div className="App">
 
-          <Header className = 'header'/>
+          <Header/>
           <hr />
-          
-          <Title />
+
+          <Title/>
 
           <Image />
 
           <Recipe />
 
-          <div>
-            <ul>
+          <div className="IngredientsDiv">
+            <ul className = 'IngredientsUl'>
               {
                 Ingredients.map(ingredient => 
                   <IngredientsList
