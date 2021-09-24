@@ -3,7 +3,7 @@ import React from 'react'
 export default class ButtonList extends React.Component {
     render() {
         return (
-            <div class="icons">
+            <div className="icons">
                 <img alt="facebook-logo" src="fb-icon.png"/>
                 <img alt="twitter-logo" src="twit-icon.png"/>
                 <img alt="google-logo" src="gp-icon.png"/>

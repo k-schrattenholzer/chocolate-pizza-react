@@ -15,9 +15,6 @@ header {
   text-align: left;
 }
 
-.IngredientsDiv {
-  /* background-image: url('list-bg.png'); */
-}
 
 .IngredientsUl {
   list-style: none;
@@ -26,7 +23,7 @@ header {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.Ingredients {
+.IngredientItem {
   margin: 5px;
 }
 
